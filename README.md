@@ -17,8 +17,8 @@ This is tool supply management system performs the following three operations. T
 Raw data are stored under the data folder. Processed CSV files will be stored inside the data/results folder.
  
  To run the program you can use a command-line argument as follows, for instance  
- > python3 toolsupplymgt.py -o true -- > [mandatory] this will Processing product order with total price 
- > python3 toolsupplymgt.py -o true -c true -r true -- >  this will execute all three functionalities
+ > python3 toolsupplymgt.py -o  -- >  this will process product order with total price
+ > python3 toolsupplymgt.py -o  -c  -r  -- >  this will execute all three functionalities
  
  Note: the result of the execution can be found data/results folder in a CSV file.
 
