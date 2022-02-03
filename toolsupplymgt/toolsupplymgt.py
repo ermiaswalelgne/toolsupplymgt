@@ -35,7 +35,7 @@ def process_order(product_path, order_path ):
             except csv.Error as e:
                 sys.exit('file {}, line {}: {}'.format(order_path, order_reader.line_num, e))
     except IOError:
-        logging.exception('')
+        logging.exception('IOError')
     if not len(ordered_prices_list):
         return ValueError('No data available')
     return ordered_prices_list

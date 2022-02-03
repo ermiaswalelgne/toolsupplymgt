@@ -2,15 +2,14 @@
 
 #  A simple tool for supply managment system
 
-This is tool supply company management system performs the following three operations based on using the CSV data as a source:
-- 1: Calculate the total order cost with euro and save it along with the order id.
-   It then saves the result to a file called order_prices.csv under the results folder file.
+This is tool supply management system performs the following three operations. The operations are performed based on the three CSV files that come with this repo stored inside the data directory. The three main operations are:
+- 1: Calculate the total order cost with euro and retrive the coresponding order id.
+   It then saves the result to a new file called order_prices.csv under the results folder.
 
 - 2:  For each product id, it fetches the list of customers who have purchased a given product.
-    And save the result to a  product_customers.csv file.
+    Then it saves the result to a new file name called product_customers.csv.
 
-- 3: It filter customer id with the total amount spent on purchased products, it than rank the customer in descending order by total_euros
-     The result of this computation is saved into the customer_ranking.csv file.
+- 3: Filter customer id with the total amount spent on purchased products, it then ranks the customer in descending order by total_euros. The result of this computation is saved into the customer_ranking.csv file.
 
 
 
