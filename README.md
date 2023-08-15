@@ -1,25 +1,24 @@
+# Supply Management System Tool
 
+Welcome to the Supply Management System Tool repository. This tool performs a variety of supply management operations based on data provided in CSV files. The repository includes three primary operations that are executed using the corresponding CSV files within the `data` directory. The main functionalities are as follows:
 
-#  A simple tool for supply managment system
+1. **Total Order Cost Calculation and Corresponding Order ID Retrieval:**
+   This operation calculates the total order cost in euros and retrieves the corresponding order ID. The results are then saved to a new CSV file named `order_prices.csv` within the `results` folder.
 
-This is tool supply management system performs the following three operations. The operations are performed based on the three CSV files that come with this repo stored inside the data directory. The three main operations are:
-- 1: Calculate the total order cost with euro and retrive the coresponding order id.
-   It then saves the result to a new file called order_prices.csv under the results folder.
+2. **Customer List Retrieval for Each Product ID:**
+   For each product ID, this operation fetches the list of customers who have purchased the given product. The outcome is saved in a new CSV file called `product_customers.csv`.
 
-- 2:  For each product id, it fetches the list of customers who have purchased a given product.
-    Then it saves the result to a new file name called product_customers.csv.
+3. **Customer Ranking by Total Amount Spent:**
+   This operation filters customer IDs based on the total amount spent on purchased products and ranks customers in descending order by their total euros spent. The computed result is stored in the `customer_ranking.csv` file.
 
-- 3: Filter customer id with the total amount spent on purchased products, it then ranks the customer in descending order by total_euros. The result of this computation is saved into the customer_ranking.csv file.
+## Code Structure
 
+The original data is organized under the `data` folder. Processed CSV files are stored in the `data/results` folder.
 
+To execute the program, you can use command-line arguments as follows:
+- To process product orders with total prices: `python3 toolsupplymgt.py -o`
+- To execute all three functionalities: `python3 toolsupplymgt.py -o -c -r`
 
-# Code structure 
-Raw data are stored under the data folder. Processed CSV files will be stored inside the data/results folder.
- 
- To run the program you can use a command-line argument as follows, for instance  
- > python3 toolsupplymgt.py -o  -- >  this will process product order with total price
- > python3 toolsupplymgt.py -o  -c  -r  -- >  this will execute all three functionalities
- 
- Note: the result of the execution can be found data/results folder in a CSV file.
+Please note that the execution results can be found in the `data/results` folder in CSV format.
 
- This is the first version and more improvements will come soon...
+This version represents an initial release, with more enhancements and improvements planned for the future.
